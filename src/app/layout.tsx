@@ -19,6 +19,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="/IMG-20180122-WA0075-_1_.svg?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+      </head>
       <body
         className={cn(
           " bg-slate-50 dark:bg-slate-900 w-full text-slate-900 dark:text-slate-300 ",

@@ -4,13 +4,19 @@ import Link from "next/link";
 
 import { navItems } from "@/components/navlinks";
 import { Button } from "@/components/ui/Button";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-slate-50 darK:bg-slate-900 py-3  border border-b shadow-sm  w-full  text-slate-800 darK:text-slate-300">
       <nav className="max-w-7xl mx-auto nav flex items-center px-1 justify-between ">
         <Link href="/" className="flex place-items-center text-2xl">
-          Roi <span className="text-indigo-600">-Ben</span>
+          <Image
+            src="/IMG-20180122-WA0076-_1_.svg"
+            alt="logo"
+            width={100}
+            height={100}
+          />
         </Link>
 
         <div className="hidden sm:flex">
