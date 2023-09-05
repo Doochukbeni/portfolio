@@ -26,7 +26,7 @@ const ProjectPage = ({ params }: { params: { slugId: string } }) => {
             Source Code
           </Link>
 
-          <Button size="default">
+          <Button size="default" className="p-5 max-w-fit rounded-lg w-full">
             <Link href={data?.url!} target="_blank">
               Explore
             </Link>

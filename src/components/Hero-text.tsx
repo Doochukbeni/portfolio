@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/Button";
+import Link from "next/link";
 
 const HeroText = () => {
   return (
@@ -16,9 +17,9 @@ const HeroText = () => {
       <Button
         variant="default"
         size="default"
-        className="p-5 md:w-16 rounded-lg w-full"
+        className="p-5 max-w-fit rounded-lg w-full"
       >
-        Contact
+        <Link href="/contact">Contact</Link>
       </Button>
     </div>
   );
