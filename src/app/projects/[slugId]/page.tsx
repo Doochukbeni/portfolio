@@ -18,12 +18,21 @@ const ProjectPage = ({ params }: { params: { slugId: string } }) => {
           <p className="text-sm dark:text-slate-300 text-slate-700 md:text-lg font-semibold  text-justify">
             {data?.description}
           </p>
+          <Link
+            href={data?.github!}
+            target="_blank"
+            className="text-sm text-slate-900 underline"
+          >
+            Source Code
+          </Link>
 
-          <Button size="default" variant="default">
-            <Link href={data?.url!}>Explore</Link>
+          <Button size="default">
+            <Link href={data?.url!} target="_blank">
+              Explore
+            </Link>
           </Button>
         </div>
-        <div className="flex-1 w-full max-w-2xl mx-auto border-2 h-full items-center pt-3 shadow-md relative">
+        <div className="flex-1 w-full max-w-2xl mx-auto  h-full items-center pt-3 shadow-md relative">
           <Image
             src={data?.image!}
             alt="category image"

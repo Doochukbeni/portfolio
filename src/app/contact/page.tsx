@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <section className="text-center bg-gray-200 py-3 px-2">
+    <section className="text-center bg-white h-full py-3 px-2">
       <h1 className="text-3xl font-bold flex items-center justify-center mt-8 tracking-tight text-gray-900 sm:text-4xl">
         Get In Touch
       </h1>
@@ -30,7 +30,7 @@ const Contact = () => {
           <br />
           {/* contact  */}
           <address className="text-gray-700 flex items-center font-semibold gap-2 mt-10">
-            <Mail size={20} /> Email Address: {""}
+            <Mail size={20} /> Email:
             <span className="text-sm text-gray-500">
               <a href="mailto:doochukbeni@gmail.com">doochukbeni@gmail.com</a>{" "}
             </span>
