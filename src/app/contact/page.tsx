@@ -1,5 +1,6 @@
 "use client";
 
+import ContactForm from "@/components/ContactForm";
 import { Linkedin, Locate, Mail, Phone } from "lucide-react";
 import Image from "next/image";
 
@@ -12,15 +13,15 @@ const Contact = () => {
       <p className="mt-2 mb-8 text-lg font-semibold leading-8 text-gray-600">
         I look forward to hearing from you soon.
       </p>
+      <h2 className="text-l font-semibold  text-gray-700  text-justify sm:text-l">
+        I am committed to crafting cutting-edge web applications that captivate
+        users and deliver an exceptional online experience. With a proven track
+        record of successfully developing and deploying innovative solutions, I
+        take pride in my ability to bridge the gap between creative design and
+        robust functionality.
+      </h2>
       <div className="flex flex-col sm:flex-row gap-10">
         <div className="flex-1 text-start py-5 px-3">
-          <h2 className="text-l font-semibold  text-gray-700  text-justify sm:text-l">
-            I am committed to crafting cutting-edge web applications that
-            captivate users and deliver an exceptional online experience. With a
-            proven track record of successfully developing and deploying
-            innovative solutions, I take pride in my ability to bridge the gap
-            between creative design and robust functionality.
-          </h2>
           <address className="text-gray-700 flex items-center font-semibold gap-2 mt-10">
             <Locate /> Location: {""}
             <span className="text-sm text-gray-500">
@@ -74,6 +75,9 @@ const Contact = () => {
               <Linkedin size={20} className="text-indigo-400 rounded-md" />
             </a>
           </div>
+        </div>
+        <div className="flex-1">
+          <ContactForm />
         </div>
       </div>
     </section>
