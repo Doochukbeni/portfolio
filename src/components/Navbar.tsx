@@ -5,8 +5,17 @@ import Link from "next/link";
 import { navItems } from "@/components/navlinks";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
+import { toggle } from "@/redux/features/theme-Slice";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch } from "@/redux/store";
 
 const Navbar = () => {
+  const dispatch = useDispatch<AppDispatch>();
+
+  const toggleTheme = () => {
+    dispatch(toggle());
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-slate-50 darK:bg-slate-900 py-3  border border-b shadow-sm  w-full  text-slate-800 darK:text-slate-300">
       <nav className="max-w-7xl mx-auto nav flex items-center px-1 justify-between ">
@@ -28,6 +37,9 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
+        <Button type="button" size="sm" onClick={toggleTheme}>
+          Theme
+        </Button>
         <Button className="block sm:hidden ">&#9776;</Button>
       </nav>
     </header>

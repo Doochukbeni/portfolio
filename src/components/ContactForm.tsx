@@ -29,7 +29,7 @@ const ContactForm = () => {
     try {
       setLoading(true);
       await axios.post(
-        "http://localhost:3000/api/mailer",
+        "/api/mailer",
         JSON.stringify({ name, email, message }),
         {
           headers: {
