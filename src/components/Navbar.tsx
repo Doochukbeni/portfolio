@@ -1,24 +1,21 @@
 "use client";
 
 import Link from "next/link";
+import { useTheme } from "next-themes";
 
+import Image from "next/image";
 import { navItems } from "@/components/navlinks";
 import { Button } from "@/components/ui/Button";
-import Image from "next/image";
-import { toggle } from "@/redux/features/theme-Slice";
-import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch } from "@/redux/store";
 
 const Navbar = () => {
-  const dispatch = useDispatch<AppDispatch>();
+  const { theme, setTheme } = useTheme();
 
-  const toggleTheme = () => {
-    dispatch(toggle());
+  const themeToggle = () => {
+    setTheme("light" ? "dark" : "light");
   };
-
   return (
-    <header className="sticky top-0 z-50 bg-slate-50 darK:bg-slate-900 py-3  border border-b shadow-sm  w-full  text-slate-800 darK:text-slate-300">
-      <nav className="max-w-7xl mx-auto nav flex items-center px-1 justify-between ">
+    <header className="sticky top-0 z-50 bg-slate-50 dark:bg-slate-900 py-3  border border-b shadow-sm  w-full  text-slate-800 darK:text-slate-300">
+      <nav className="max-w-7xl mx-auto nav flex items-center px-3 justify-between ">
         <Link href="/" className="flex place-items-center text-2xl">
           <Image
             src="/IMG-20180122-WA0076-_1_.svg"
@@ -29,18 +26,24 @@ const Navbar = () => {
         </Link>
 
         <div className="hidden sm:flex">
-          <ul className="flex items-center  gap-3 ">
+          <ul className="flex items-center  gap-7 ml-8 ">
             {navItems.map((nav) => (
-              <li key={nav.id} className="link font-semibold ">
+              <li
+                key={nav.id}
+                className="link font-semibold text-slate-800 dark:text-slate-100"
+              >
                 <Link href={nav.url}>{nav.title}</Link>
               </li>
             ))}
+            <Button type="button" size="sm" onClick={() => setTheme("light")}>
+              Light
+            </Button>
+            <Button type="button" size="sm" onClick={() => setTheme("dark")}>
+              Dark
+            </Button>
+            <Button className="block sm:hidden ">&#9776;</Button>
           </ul>
         </div>
-        <Button type="button" size="sm" onClick={toggleTheme}>
-          Theme
-        </Button>
-        <Button className="block sm:hidden ">&#9776;</Button>
       </nav>
     </header>
   );

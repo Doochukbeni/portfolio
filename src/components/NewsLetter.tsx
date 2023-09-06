@@ -35,12 +35,17 @@ const NewsLetter = () => {
 
   return (
     <div className=" my-4 mx-auto w-full">
+      <h1 className="text-2xl lg:text-base  mb-4 text-slate-700 dark:text-slate-300">
+        Please kindly subscribe to my NewsLetter for exclusive project content
+        and collaboration
+      </h1>
       <form
-        className="flex max-w-3xl bg-slate-100 border"
+        className="flex max-w-3xl bg-slate-100 border "
         onSubmit={handleSubmit}
       >
         <input
-          type="text"
+          type="email"
+          autoFocus
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
@@ -49,7 +54,7 @@ const NewsLetter = () => {
         <Button
           size="lg"
           disabled={loading}
-          className="w-full rounded-l-none max-w-fit"
+          className="w-full rounded-l-none dark:rounded-r-none dark:bg-slate-600 border-2 max-w-fit"
           onClick={handleSubmit}
         >
           Send

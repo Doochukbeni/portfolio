@@ -4,6 +4,7 @@ import axios from "axios";
 import Link from "next/link";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
+
 import { Button } from "./ui/Button";
 
 const ContactForm = () => {
@@ -56,7 +57,7 @@ const ContactForm = () => {
         <div className="sm:col-span-2 mt-2.5">
           <label
             htmlFor="name"
-            className="block text-sm font-semibold leading-6 text-gray-900"
+            className="block text-sm font-semibold leading-6  dark:text-slate-300 text-gray-900"
           >
             Name
           </label>
@@ -77,7 +78,7 @@ const ContactForm = () => {
         <div className="sm:col-span-2 mt-2.5">
           <label
             htmlFor="email"
-            className="block capitalize text-sm font-semibold leading-6 text-gray-900"
+            className="block capitalize text-sm font-semibold leading-6  dark:text-slate-300 text-gray-900"
           >
             Email
           </label>
@@ -99,7 +100,7 @@ const ContactForm = () => {
         <div className="sm:col-span-2 mt-2.5">
           <label
             htmlFor="message"
-            className="block text-sm font-semibold leading-6 text-gray-900"
+            className="block text-sm font-semibold leading-6 text-gray-900  dark:text-slate-300"
           >
             Message
           </label>
@@ -110,7 +111,7 @@ const ContactForm = () => {
               value={message}
               autoComplete="off"
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Message"
+              placeholder="Message ..."
               cols={30}
               rows={10}
               className="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-400 sm:text-sm sm:leading-6"
@@ -119,7 +120,7 @@ const ContactForm = () => {
         </div>
         <div className="flex mt-2.5 gap-x-4 sm:col-span-2">
           <label
-            className="text-sm  pl-2 leading-6 text-gray-600"
+            className="text-sm  pl-2 leading-6 dark:text-slate-300 text-gray-600"
             id="switch-1-label"
           >
             By submitting this form, you agree to our
@@ -133,7 +134,7 @@ const ContactForm = () => {
           type="submit"
           disabled={loading}
           onClick={handleSubmit}
-          className="w-full my-4 dark:bg-slate-200"
+          className="w-full my-4 dark:bg-slate-500 border dark:hover:bg-slate-700 dark:border-slate-200"
         >
           Send
         </Button>

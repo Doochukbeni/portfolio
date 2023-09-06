@@ -4,10 +4,10 @@ import Testimonial from "./TestimonialCard";
 const Testimonials = () => {
   return (
     <div className="text-center w-full my-10 py-5 mx-auto ">
-      <h1 className="text-3xl font-semibold leading-3 text-slate-700 ">
+      <h1 className="text-3xl font-semibold leading-3 dark:text-slate-200 text-slate-700 ">
         Testimonials
       </h1>
-      <p className="leading-6 px-3 text-slate-400  font-semibold my-10">
+      <p className="leading-6 px-3 text-slate-600 dark:text-slate-300  font-semibold my-10">
         I have worked with different teams of developers to build a robust and
         scalable web applications{" "}
       </p>

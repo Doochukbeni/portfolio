@@ -15,7 +15,7 @@ const AboutHeader = () => {
           />
           <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
             <blockquote>
-              <p className="text-lg font-medium text-slate-700 dark:text-zinc-400">
+              <p className="text-lg font-medium text-slate-700 dark:text-zinc-300">
                 Hello there! I am a highly skilled Full Stack Web Developer with
                 a wealth of experience in a diverse range of technologies,
                 including ReactJS, Next.js, NodeJS, Tailwind CSS, React Redux,
@@ -28,7 +28,7 @@ const AboutHeader = () => {
               <div className="text-sky-500 dark:text-sky-400">
                 Chukwuma Benjamin Izummuo
               </div>
-              <div className="text-slate-700 dark:text-slate-500">
+              <div className="text-slate-700 dark:text-slate-400">
                 Fullstack ReactJS/NextJS software engineer.
               </div>
             </figcaption>

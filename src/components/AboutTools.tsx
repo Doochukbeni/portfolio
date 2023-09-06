@@ -10,23 +10,27 @@ import {
 
 const AboutTools = () => {
   return (
-    <div className="max-w-2xl overflow-x-scroll lg:mx-0 mx-auto">
-      <span className="text-justify text-slate-900 font-semibold">
+    <div className="">
+      <span className="mx-auto  text-slate-900 dark:text-slate-300 font-semibold">
         These are some of the tools i use for my applications but not limited to
         these:
       </span>
-      <Table>
+      <Table className="mt-8 max-w-2xl overflow-x-scroll lg:mx-0 mx-auto">
         <TableHeader>
           <TableRow>
-            <TableHead className="w-[100px] text-slate-800 underline">
+            <TableHead className="w-[100px] text-slate-800 dark:text-slate-200 underline">
               Languages
             </TableHead>
-            <TableHead className="text-slate-800 underline">Styling</TableHead>
-            <TableHead className="text-slate-800 underline">Database</TableHead>
-            <TableHead className="text-right text-slate-800 underline">
+            <TableHead className="text-slate-800 dark:text-slate-200 underline">
+              Styling
+            </TableHead>
+            <TableHead className="text-slate-800 dark:text-slate-200 underline">
+              Database
+            </TableHead>
+            <TableHead className="text-right text-slate-800 dark:text-slate-200 underline">
               FrontEnd
             </TableHead>
-            <TableHead className="text-right text-slate-800 underline">
+            <TableHead className="text-right text-slate-800 dark:text-slate-200 underline">
               BackEnd
             </TableHead>
           </TableRow>

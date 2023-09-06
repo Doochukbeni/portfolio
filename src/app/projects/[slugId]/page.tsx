@@ -21,12 +21,15 @@ const ProjectPage = ({ params }: { params: { slugId: string } }) => {
           <Link
             href={data?.github!}
             target="_blank"
-            className="text-sm text-slate-900 underline"
+            className="text-sm text-slate-900 dark:text-slate-400 underline"
           >
             Source Code
           </Link>
 
-          <Button size="default" className="p-5 max-w-fit rounded-lg w-full">
+          <Button
+            size="default"
+            className="p-5 max-w-fit rounded-lg  dark:bg-slate-700 dark:hover:bg-slate-800 w-full"
+          >
             <Link href={data?.url!} target="_blank">
               Explore
             </Link>
