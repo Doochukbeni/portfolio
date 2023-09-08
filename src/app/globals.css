@@ -100,3 +100,13 @@ body {
 .pro__link:nth-child(4) {
   background: url("https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvZGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
 }
+
+/* light mode toggle ball  */
+
+.ball {
+  width: 18px;
+  height: 18px;
+  background-color: #0000;
+  border-radius: 50%;
+  position: absolute;
+}

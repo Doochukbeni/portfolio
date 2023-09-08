@@ -1,35 +1,46 @@
 import Image from "next/image";
 
-const Testimonial = ({}) => {
+interface TestimonialProps {
+  logo: string;
+  image: string;
+  name: string;
+
+  position: string;
+  content: string;
+}
+
+const Testimonial = ({
+  logo,
+  image,
+  name,
+  position,
+  content,
+}: TestimonialProps) => {
   return (
     <div className="border border-solid m-4 p-4 shadow-xl bg-white dark:bg-slate-600 rounded-lg border-slate-100 dark:border-slate-500">
       <div className="mx-auto max-w-2xl lg:max-w-4xl">
         <Image
           className="mx-auto object-contain h-12"
-          src="/image.png"
+          src={logo}
           alt="company logo"
           height={30}
           width={100}
         />
         <figure className="mt-10">
           <blockquote className="text-center text-lg font-semibold leading-5 dark:text-slate-300 text-gray-900 sm:text-2xl sm:leading-9">
-            <p>
-              “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              expedita voluptas culpa sapiente alias molestiae. Numquam corrupti
-              in laborum sed rerum et corporis.”
-            </p>
+            <p>“{content}”</p>
           </blockquote>
           <figcaption className="mt-10">
             <Image
-              className="mx-auto h-10 w-10 rounded-full"
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              className="mx-auto h-10 w-10 object-contain rounded-full"
+              src={image}
               alt=""
-              height={10}
-              width={10}
+              height={30}
+              width={30}
             />
             <div className="mt-4 flex items-center justify-center space-x-3 text-sm sm:text-base">
               <div className="font-semibold dark:text-slate-300 text-gray-900">
-                Judith Black
+                {name}
               </div>
               <svg
                 viewBox="0 0 2 2"
@@ -40,9 +51,7 @@ const Testimonial = ({}) => {
               >
                 <circle cx="1" cy="1" r="1" />
               </svg>
-              <div className="text-gray-600 dark:text-gray-400">
-                CEO of Workcation
-              </div>
+              <div className="text-gray-600 dark:text-gray-400">{position}</div>
             </div>
           </figcaption>
         </figure>

@@ -1,8 +1,9 @@
 "use client";
-import { useState } from "react";
-import { Button } from "./ui/Button";
-import { toast } from "react-hot-toast";
 import axios from "axios";
+import { useState } from "react";
+import { toast } from "react-hot-toast";
+
+import { Button } from "./ui/Button";
 
 const NewsLetter = () => {
   const [email, setEmail] = useState("");

@@ -9,24 +9,36 @@ const Testimonials = () => {
       </h1>
       <p className="leading-6 px-3 text-slate-600 dark:text-slate-300  font-semibold my-10">
         I have worked with different teams of developers to build a robust and
-        scalable web applications{" "}
+        scalable web applications
       </p>
       <main className=" grid lg:grid-cols-3 md:grid-cols-2 gap-8 items-center px-6 py-10 sm:py-10 lg:px-8 mx-auto max-w-7xl">
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
-        {/* <div
-              className="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6"
-              aria-hidden="true"
-            >
-              <div
-                className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
-                style={{
-                  clipPath:
-                    "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-                }}
-              ></div>
-            </div> */}
+        <Testimonial
+          logo={"/image.png"}
+          image={"/dozie.png"}
+          content={
+            "Throughout our collaboration, Benjamin consistently delivered high-quality code on time, even under tight deadlines. He was a reliable and proactive team member, always willing to go the extra mile to ensure our projects' success."
+          }
+          name={"Duru Dozie"}
+          position={"CTO Vigoplace"}
+        />
+        <Testimonial
+          logo={"/image.png"}
+          image={"/mrpaul.png"}
+          content={
+            "I wholeheartedly recommend Benjamin to any organization in need of a talented and versatile full-stack developer. He not only possesses the technical skills required for the job but also the qualities that make for a great teammate and contributor to any project."
+          }
+          name={"Mr Paul"}
+          position={"Co Founder & Manager"}
+        />
+        <Testimonial
+          logo={"/bend-d-trend.jpeg"}
+          image={"/bend-d-trend.jpeg"}
+          name={"Chukwuka"}
+          content={
+            "What sets Benjamin apart is not just his technical prowess, but also his strong communication and collaboration skills. He was always approachable and eager to share knowledge with the team, fostering a culture of continuous learning."
+          }
+          position={"CEO Bend D Trend"}
+        />
       </main>
     </div>
   );
