@@ -6,7 +6,7 @@ import { Moon, Sun } from "lucide-react";
 const MobileMenuToggle = () => {
   const { theme, setTheme } = useTheme();
   return (
-    <section className="absolute right-0 top-0 bg-black w-full text-5xl flex-col justify-center">
+    <section className="absolute hidden right-0 top-0 bg-black w-full text-5xl flex-col justify-center">
       <div className="sm:hidden  max-w-3xl w-14 flex items-center justify-between rounded-2xl relative cursor-pointer p-1 border-slate-400 border-2 ">
         <button type="button" onClick={() => setTheme("light")}>
           <Moon className="h-5  w-5" color="white" />

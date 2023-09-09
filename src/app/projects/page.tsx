@@ -1,7 +1,11 @@
 import HomeProject from "@/components/(projects)/HomeProject";
 
 const page = () => {
-  return <HomeProject />;
+  return (
+    <div className="h-full">
+      <HomeProject />;
+    </div>
+  );
 };
 
 export default page;
