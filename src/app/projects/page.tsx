@@ -2,8 +2,8 @@ import HomeProject from "@/components/(projects)/HomeProject";
 
 const page = () => {
   return (
-    <div className="h-full">
-      <HomeProject />;
+    <div className="min-h-full h-screen">
+      <HomeProject />
     </div>
   );
 };

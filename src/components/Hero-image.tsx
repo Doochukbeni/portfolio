@@ -6,11 +6,11 @@ const HeroImage = () => {
       <div className="absolute z-[10] top-2 md:top-20 right-10 h-60 md:h-96 w-60 bg-slate-500 opacity-10 rounded-full"></div>
       <div className="absolute z-[10] top-2 md:top-20 left-10 h-60 md:h-96 w-60 bg-slate-500 opacity-10 rounded-full"></div>
       <div
-        className="absolute z-[10] top-0 right-40 hidden md:block h-60
+        className="absolute z-[10] top-0 right-40 hidden lg:block h-60
       md:h-96 w-60 bg-slate-500 opacity-10 rounded-full"
       ></div>
 
-      <div className="md:absolute md:top-20 flex mx-auto z-[20]  md:left-48">
+      <div className="md:absolute md:top-20  flex mx-auto z-[20]  md:left-20 lg:left-48">
         <Image
           src="/passport_photo.JPG"
           alt="Chukwuma Benjmain"

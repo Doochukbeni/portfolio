@@ -9,7 +9,7 @@ const ProjectPage = ({ params }: { params: { slugId: string } }) => {
   const data = projectList.find((item) => item.id === id);
 
   return (
-    <section className="sm:my-10">
+    <section className="sm:my-10 h-screen">
       <main className="flex flex-col-reverse mx-auto lg:flex-row gap-10 my-5">
         <div className="flex-1 flex flex-col gap-5 justify-center">
           <h1 className="font-semibold text-3xl md:text-5xl text-slate-900 capitalize hero__heading">

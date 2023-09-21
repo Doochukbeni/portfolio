@@ -5,7 +5,7 @@ const AboutHero = () => {
         <h1 className="sm:text-3xl text-lg py-3 font-bold tracking-tight dark:text-slate-200 text-gray-600">
           Who is Chukwuma Benjamin Izummuo?
         </h1>
-        <p className="text-justify dark:text-slate-400 lg:leading-8 text-slate-600 text-base ">
+        <p className="text-justify dark:text-slate-300 lg:leading-8 text-slate-600 text-base ">
           Chukwuma Benjamin is an accomplished Full Stack Web Developer with a
           strong focus on ReactJS, Next.js, NodeJS, and Tailwind CSS, I am
           committed to crafting cutting-edge web applications that captivate
@@ -19,7 +19,7 @@ const AboutHero = () => {
         <h1 className="sm:text-3xl text-lg py-2  font-bold tracking-tight dark:text-slate-200 text-gray-600">
           Key Highlights:
         </h1>
-        <p className="text-justify  dark:text-slate-400 lg:leading-9 text-slate-600 text-base ">
+        <p className="text-justify  dark:text-slate-300 lg:leading-9 text-slate-600 text-base ">
           🚀 Proficient in building dynamic, responsive user interfaces using
           ReactJS and Next.js, ensuring top-notch performance and seamless
           interactions. 🌐 Expertise in server-side development with NodeJS,

@@ -17,7 +17,7 @@ const HeroText = () => {
       <Button
         variant="default"
         size="default"
-        className="p-5 max-w-fit rounded-lg w-full"
+        className="p-5 max-w-fit border-2 border-slate-400 rounded-lg w-full"
       >
         <Link href="/contact">Contact</Link>
       </Button>
