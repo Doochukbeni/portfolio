@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@/components/ui/Button";
+import { Button, buttonVariants } from "@/components/ui/Button";
 import Link from "next/link";
 
 const HeroText = () => {
@@ -13,14 +13,24 @@ const HeroText = () => {
         solutions through building scalable and top-notch user experience
         applications
       </p>
-
-      <Button
-        variant="default"
-        size="default"
-        className="p-5 max-w-fit border-2 border-slate-400 rounded-lg w-full"
-      >
-        <Link href="/contact">Contact</Link>
-      </Button>
+      <div className="flex items-center gap-9">
+        <Button
+          variant="default"
+          size="default"
+          className="p-5 max-w-fit border-2 border-slate-400 rounded-lg w-full"
+        >
+          <Link href="/contact">Contact</Link>
+        </Button>
+        <Button
+          variant="secondary"
+          size="lg"
+          className="p-5 max-w-fit border-2 border-slate-400 rounded-lg w-full"
+        >
+          <a href="/updated-april-2023.pdf" download>
+            Download CV
+          </a>
+        </Button>
+      </div>
     </div>
   );
 };
