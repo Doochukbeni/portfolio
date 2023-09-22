@@ -10,9 +10,9 @@ const ProjectPage = ({ params }: { params: { slugId: string } }) => {
 
   return (
     <section className="sm:my-10 h-screen">
-      <main className="flex flex-col-reverse mx-auto lg:flex-row gap-10 my-5">
+      <main className="flex flex-col-reverse items-center mx-auto lg:flex-row gap-10 my-5">
         <div className="flex-1 flex flex-col gap-5 justify-center">
-          <h1 className="font-semibold text-3xl md:text-5xl text-slate-900 capitalize hero__heading">
+          <h1 className="font-semibold text-3xl dark:text-slate-100 md:text-5xl text-slate-900 capitalize hero__heading">
             {data?.title}
           </h1>
           <p className="text-sm dark:text-slate-300 text-slate-700 md:text-lg font-semibold  text-justify">

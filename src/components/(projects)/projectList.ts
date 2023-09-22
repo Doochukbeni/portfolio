@@ -1,12 +1,12 @@
 export const projectList = [
   {
     id: 1,
-    title: "Slack Clone",
-    url: "https://slack-clone-beb5d.web.app",
+    title: "Chat App",
+    url: "https://chat-app-doo.vercel.app/",
     description:
-      "This is an old Slack App clone. I built this as a practice project to improve my dev skill as well as build the muscle memory. This project was built with ReactJS and still works fine but you might encounter bugs along the way. Hopefully someday i will have the time to rebuild this app with modern technology. I hope you enjoy the project. Thank you for your time",
-    image: "/slackclone.png",
-    github: "https://github.com/Doochukbeni/slack-clone-2023",
+      "I've crafted a cutting-edge web application using Next.js and Tailwind CSS to provide a sleek and responsive user interface. For data management and scalability, Redis and PlanetScale are our trusted allies. TypeScript keeps our codebase clean and maintainable, while authentication is a breeze thanks to NextAuth.js. Real-time communication is powered by the Pusher library, and we've prioritized accessibility by leveraging the Headless UI library for user interface components. Plus, we've implemented smooth content loading with react-loading-skeleton, ensuring a top-notch user experience. In essence, I've built a feature-packed, high-performance web platform that caters to a wide range of user needs.",
+    image: "/chat-app.png",
+    github: "https://github.com/Doochukbeni/chat-app",
   },
   {
     id: 2,
