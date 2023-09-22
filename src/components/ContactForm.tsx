@@ -70,7 +70,7 @@ const ContactForm = () => {
               required
               name="name"
               placeholder="Name"
-              className="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-400 sm:text-sm sm:leading-6"
+              className="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 dark:text-slate-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-400 sm:text-sm sm:leading-6"
             />
           </div>
         </div>
@@ -92,7 +92,7 @@ const ContactForm = () => {
               id="email"
               name="email"
               placeholder="Email"
-              className="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-400 sm:text-sm sm:leading-6"
+              className="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 dark:text-slate-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-400 sm:text-sm sm:leading-6"
             />
           </div>
         </div>
@@ -114,7 +114,7 @@ const ContactForm = () => {
               placeholder="Message ..."
               cols={30}
               rows={10}
-              className="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-400 sm:text-sm sm:leading-6"
+              className="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 dark:text-slate-300 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-400 sm:text-sm sm:leading-6"
             ></textarea>
           </div>
         </div>
