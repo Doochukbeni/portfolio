@@ -26,7 +26,7 @@ const HeroText = () => {
           size="lg"
           className="p-5 max-w-fit border-2 border-slate-400 rounded-lg w-full"
         >
-          <a href="/updated-april-2023.pdf" download>
+          <a href="/chukwumaCV.pdf" download>
             Download CV
           </a>
         </Button>
