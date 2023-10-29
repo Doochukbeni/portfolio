@@ -15,6 +15,9 @@ const NewsLetter = () => {
     if (!email) {
       return toast("Email is required");
     }
+    if (email.trim() === " ") {
+      return toast("Please enter a valid email address");
+    }
 
     try {
       setLoading(true);
@@ -46,7 +49,6 @@ const NewsLetter = () => {
       >
         <input
           type="email"
-          autoFocus
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
